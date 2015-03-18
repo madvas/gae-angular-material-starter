@@ -217,6 +217,7 @@
         'clean-cache',
         'bower-install',
         'inject-scripts',
+        'less',
         'watch',
         'copy-fonts',
         'run-server'

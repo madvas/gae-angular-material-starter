@@ -31,6 +31,15 @@ First make sure you've got following things installed on your machine:
 * [virtualenv][]
 
 ##Install!
+Using yeoman:
+```
+sudo npm install -g generator-gae-angular-material-starter
+mkdir myNewApp && cd myNewApp
+yo gae-angular-material-starter  # it will ask you few questions, e.g your app name, etc.
+gulp run
+```
+
+Using gitgub:
 ```
 git clone https://github.com/madvas/gae-angular-material-starter
 cd gae-angular-material-starter
@@ -50,8 +59,7 @@ appcfg.py update main
 And that's it! Your next big thing is out!
 
 ##What's left to do?
-* Yeoman generator - soon to be done
-* Tests - hopefully, soon to be done
+* Tests - soon to be done
 * Docs/Tutorial - Although, docs doesn't exist yet, code is heavily commented, so you know what's going on :)
 
 ##Contribute!
