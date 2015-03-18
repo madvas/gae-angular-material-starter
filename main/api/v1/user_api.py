@@ -82,7 +82,9 @@ class UserPasswordAPI(Resource):
         parser.add_argument('currentPassword', type=UserValidator.create('password'), dest='current_password')
         parser.add_argument('newPassword', type=UserValidator.create('password'), dest='new_password')
         args = parser.parse_args()
-        if not g.model_db.has_password(args.current_password):
+        # Users, who signed up via social networks have empty password_hash, so they have to be allowed
+        # to change it as well
+        if g.model_db.password_hash != '' and not g.model_db.has_password(args.current_password):
             raise ValueError('Given password is incorrect.')
         g.model_db.password_hash = util.password_hash(args.new_password)
         g.model_db.put()

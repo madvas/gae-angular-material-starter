@@ -38,6 +38,7 @@
                 inputTabindex  : '@',
                 name           : '@',
                 label          : '@',
+                optional       : '@',
                 ngModel        : '=',
                 repeatPassword : '&'
             },
