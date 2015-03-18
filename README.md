@@ -39,7 +39,7 @@ yo gae-angular-material-starter  # it will ask you few questions, e.g your app n
 gulp run
 ```
 
-Using gitgub:
+Using github:
 ```
 git clone https://github.com/madvas/gae-angular-material-starter
 cd gae-angular-material-starter
